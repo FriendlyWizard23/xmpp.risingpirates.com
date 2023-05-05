@@ -1,103 +1,126 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Risingpirate's little brother</title>
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Risingpirate's little brother</title>
   <style>
     @font-face {
-    font-family: 'clacon2';
+      font-family: 'clacon2';
       src: url('./fonts/clacon2.ttf');
-    } 
-    body{
+    }
+
+    body {
       background-color: black;
       font-family: clacon2;
     }
-    .h1title{
-      color:green;
+
+    .h1title {
+      color: green;
+      word-wrap: break-word;
     }
-    .redcontainer{
+
+    .redcontainer {
       border: 2px solid red;
       border-radius: 5px;
     }
-    .greencontainer{
+
+    .greencontainer {
       border: 2px solid green;
-      border-radius: 5px; 
-    }
-    .redcontainerbb{
-      border: 5px solid red;
-      border-radius: 10px;      
-    }
-    span{
-      color:white;
-    }
-    .imgjolly{
-      max-width:100px;
-      max-height: 100px;
-    }
-    h5.cardtitle{
-      color:red;
+      border-radius: 5px;
     }
 
+    .redcontainerbb {
+      border: 5px solid red;
+      border-radius: 10px;
+    }
+
+    span {
+      color: white;
+    }
+
+    .imgjolly {
+      max-width: 100px;
+      max-height: 100px;
+    }
+
+    h5.cardtitle {
+      color: red;
+    }
   </style>
-  </head>
-  <body color="black">
-    
-    <div class="container-lg redcontainerbb mt-2 mb-2 ms-2 me-2">
-      <div class="container text-center pd-3 mt-2 mb-2 ms-2 me-2">
-        <div class="row mt-4 p-2 text-center">
-          <div class="col">
-            <!-- FIRST JOLLY ROGER IMAGE-->
-            <img src="./images/jolly.jpg" class="img-fluid w-50 imgjolly">
-          </div>
-          <div class="col">
-            <!-- TITLE -->
-            <h1 class="h1title">Welcome to xmpp.risingpirates.com</h1>
-          </div>
-          <div class="col">
-            <!-- SECOND JOLLY ROGER IMAGE -->
-            <img src="./images/jolly.jpg" class="img-fluid w-50 imgjolly">
-          </div>
+</head>
+
+<body color="black">
+  <div class="container-fluid redcontainerbb mt-2 mb-2 ms-2 me-2">
+    <div class="container-fluid text-center pd-3 mt-2 mb-2 ms-2 me-2">
+      <div class="row text-center">
+        <div class="col">
+          <!-- FIRST JOLLY ROGER IMAGE-->
+          <img src="./images/jolly.jpg" class="img-fluid imgjolly mx-auto">
         </div>
-        
+        <div class="col mx-auto">
+          <!-- TITLE -->
+          <h1 class="h1title">Welcome to xmpp.risingpirates.com</h1>
+        </div>
+        <div class="col mx-auto">
+          <!-- SECOND JOLLY ROGER IMAGE -->
+          <img src="./images/jolly.jpg" class="img-fluid imgjolly mx-auto">
+        </div>
       </div>
-      
-      <div class="container-fluid mt-1 mb-2 ms-2 me-2"> 
-        <!-- PRIMA RIGA DEI BOX-->
-        <div class="row mt-4 p-4">
-          <div class="col greencontainer p-4">
-            <span>Welcome to the XMPP.risingpirates.com, if you're here you probably found this sub-domain via the main one <a href="https://www.risingpirates.com">risingpirates.com </a><br>
-                  So, Why would i create a subdomain for my main domain? Simply because i wanted to share with all of you the services i'm hosting in my raspberry.<br>
-                  Down here you will be able to see all of them and click the one you're interested in more. Have a nice staying
-            </span>
-          </div>
+
+    </div>
+
+    <div class="container-fluid mt-1 mb-2 ms-2 me-2">
+      <!-- PRIMA RIGA DEI BOX-->
+      <div class="row mt-4 ml-4 mb-4 mr-4 p-4">
+        <div class="col-12 greencontainer p-4">
+          <span>Welcome to the XMPP.risingpirates.com, if you're here you probably found this sub-domain via the main
+            one <a href="https://www.risingpirates.com">risingpirates.com </a><br>
+            So, Why would i create a subdomain for my main domain? Simply because i wanted to share with all of you the
+            services i'm hosting in my raspberry.<br>
+            Down here you will be able to see all of them and click the one you're interested in more. Have a nice
+            staying
+          </span>
         </div>
-        <!-- SECONDA RIGA DEI BOX-->
-        <div class="row mt-4 p-4">
-          <!-- PRIMA COLONNA -->
-          <div class="col">
-            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-              <img src="./images/xmpp.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title cardtitle">XMPP SERVER </h5>
-                <p class="card-text">Welcome to my personal XMPP server powered by ejabberd and hosted on a Raspberry Pi with TLS encryption! This server provides a secure and private platform for instant messaging and real-time communication, and is perfect for personal use.</p>
-                <a href="#" class="btn btn-secondary">Register</a>
-                <a href="https://xmpp.org/about/technology-overview/" target="_blank" class="btn btn-secondary">More about</a>
-              </div>
+      </div>
+      <!-- SECONDA RIGA DEI BOX-->
+      <div class="row mt-4 p-4">
+        <!-- PRIMA COLONNA -->
+        <div class="col-sm-4 mt-4 p-4">
+          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+            <img src="./images/xmpp.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title cardtitle">XMPP SERVER </h5>
+              <p class="card-text">Welcome to my personal XMPP server powered by ejabberd and hosted on a Raspberry Pi
+                with TLS encryption! This server provides a secure and private platform for instant messaging and
+                real-time communication, and is perfect for personal use.</p>
+              <a href="./register.html" class="btn btn-secondary">Register</a>
+              <a href="https://xmpp.org/about/technology-overview/" target="_blank" class="btn btn-secondary">More
+                about</a>
             </div>
           </div>
         </div>
-        </div>
       </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+  </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
